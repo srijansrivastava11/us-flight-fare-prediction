@@ -29,10 +29,9 @@ def predict():
         DAY_OF_WEEK = calendar.weekday(YEAR, MONTH, DAY_OF_MONTH)+1
         # print("Journey Date : ",Journey_day, Journey_month)
 
-        # Airline
-        # AIR ASIA = 0 (not in column)
+
         airline = request.form['airline']
-        print("airlinsASSAe",airline)
+
         if (airline == 'Southwest Airline Co. (WN)'):
             AIRLINE_CODE_WN = 1
             AIRLINE_CODE_DL = 0
