@@ -6,7 +6,6 @@ astor==0.8.0
 astroid==2.3.3
 astunparse==1.6.3
 attrs==19.3.0
-Babel @ file:///tmp/build/80754af9/babel_1605108370292/work
 backcall==0.1.0
 base58==2.0.1
 bleach==3.1.4
