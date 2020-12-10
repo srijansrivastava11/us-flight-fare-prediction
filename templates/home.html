@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">FLIGHT PRICE</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <!-- Departure -->
+                            <input type="date" name="Dep_Time" id="Dep_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Source</h5>
+                            <select name="Source" id="Source" required="required">
+                                <option value="2">TPA</option>
+                                <option value="3">BUR</option>
+                                <option value="4">LGA</option>
+                                <option value="5">DEN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination</h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" required="required">
+                                <option value="2">ISP</option>
+                                <option value="3">SEA</option>
+                                <option value="4">CLT</option>
+                                <option value="5">JAX</option>
+                                <option value="6">TPA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Which Airline you want to travel?</h5>
+                            <!-- Airline -->
+                            <select name="airline" id="airline" required="required">
+                                    <option value="Southwest Airline Co. (WN)">Southwest Airline Co. (WN)</option>
+                                    <option value="Delta Air Lines Inc. (DL)">Delta Air Lines Inc. (DL)</option>
+                                    <option value="American Airlines Inc. (AA)">American Airlines Inc. (AA)</option>
+                                    <option value="United Air Lines Inc. (UA)">United Air Lines Inc. (UA)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+
+        <br>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+
+</body>
+
+</html>
