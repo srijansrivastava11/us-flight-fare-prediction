@@ -328,7 +328,7 @@ def predict():
         output = np.exp(prediction[0])
         output_final = round(output, 2)
 
-        return render_template('home.html', prediction_text="Your Flight price is $. {}".format(output_final))
+        return render_template('home.html', prediction_text="Your Flight price is ${}".format(output_final))
 
     return render_template("home.html")
 

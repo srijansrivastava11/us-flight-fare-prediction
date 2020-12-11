@@ -9,11 +9,18 @@
     <!-- BootStrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+.navbar-brand
+{
+    margin-left: 736px;
+}
 
+body {
+    background-color: snow;
+    text-align: center;
+}
 
-    <!-- css -->
-    <link rel="stylesheet" href="static/css/styles.css">
-
+    </style>
 
 </head>
 
@@ -23,7 +30,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/">FLIGHT PRICE</a>
+                <h1><a class="navbar-brand" href="/">FLIGHT PRICE</a></h1>
             </div>
         </div>
     </nav>
@@ -51,10 +58,29 @@
                 <br>
                 <br>
                 <br>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Which Airline you want to travel?</h5>
+                            <!-- Airline -->
+                            <select name="airline" id="airline" required="required">
+                                    <option value="Southwest Airline Co. (WN)">Southwest Airline Co. (WN)</option>
+                                    <option value="Delta Air Lines Inc. (DL)">Delta Air Lines Inc. (DL)</option>
+                                    <option value="Alaskan Airlines Inc.(AS)">Alaskan Airlines Inc.(AS)</option>
+                                    <option value="United Air Lines Inc. (UA)">United Air Lines Inc. (UA)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             </div>
             <br>
             <br>
             <br>
+
+
             <div class="row">
                 <div class="col-sm-6">
                     <div class="card">
@@ -93,27 +119,7 @@
             <br>
             <br>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card">
 
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Which Airline you want to travel?</h5>
-                            <!-- Airline -->
-                            <select name="airline" id="airline" required="required">
-                                    <option value="Southwest Airline Co. (WN)">Southwest Airline Co. (WN)</option>
-                                    <option value="Delta Air Lines Inc. (DL)">Delta Air Lines Inc. (DL)</option>
-                                    <option value="Alaskan Airlines Inc.(AS)">Alaskan Airlines Inc.(AS)</option>
-                                    <option value="United Air Lines Inc. (UA)">United Air Lines Inc. (UA)</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
 
@@ -121,7 +127,7 @@
             <br>
             <br>
             <!-- Submit -->
-            <input type="submit" value="Submit" class="btn btn-secondary">
+            <input type="submit" value="Submit" class="btn btn-secondary" >
         </form>
 
         <br>
