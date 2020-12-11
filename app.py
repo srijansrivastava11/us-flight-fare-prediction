@@ -69,31 +69,31 @@ def predict():
         if (Source == '2'):
             ORIGIN_TPA = 1
             ORIGIN_BUR = 0
-            ORIGIN_LGA = 0
+            ORIGIN_LGB = 0
             ORIGIN_DEN = 0
 
         elif (Source == '3'):
             ORIGIN_TPA = 0
             ORIGIN_BUR = 1
-            ORIGIN_LGA = 0
+            ORIGIN_LGB = 0
             ORIGIN_DEN = 0
 
-        elif (Source == '4'):
+        elif (Source == '69'):
             ORIGIN_TPA = 0
             ORIGIN_BUR = 0
-            ORIGIN_LGA = 1
+            ORIGIN_LGB = 1
             ORIGIN_DEN = 0
 
         elif (Source == '5'):
             ORIGIN_TPA = 0
             ORIGIN_BUR = 0
-            ORIGIN_LGA = 0
+            ORIGIN_LGB = 0
             ORIGIN_DEN = 1
 
         else:
             ORIGIN_TPA = 0
             ORIGIN_BUR = 0
-            ORIGIN_LGA = 0
+            ORIGIN_LGB = 0
             ORIGIN_DEN = 0
 
         Source = request.form["Destination"]
@@ -139,7 +139,7 @@ def predict():
             DESTINATION_JAX = 0
             DESTINATION_TPA = 0
 
-        print("DESTINATION_ISP",DESTINATION_ISP)
+        #print("DESTINATION_ISP",DESTINATION_ISP)
 
         prediction = model.predict([[
             YEAR,
@@ -198,7 +198,7 @@ def predict():
             0,
             0,
             0,
-            0,
+            ORIGIN_LGB,
             0,
             0,
             0,
